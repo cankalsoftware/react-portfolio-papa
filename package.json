@@ -1,5 +1,5 @@
 {
-  "name": "react-portfolio-papa",
+  "name": "react-portfolio-alicankal",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,5 +35,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "![PAPA React JS Portfolio Starter Pack](resume-screenshot.jpg?raw=true \"PAPA React JS Portfolio Stater Pack \")",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uyko76/react-portfolio-papa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uyko76/react-portfolio-papa/issues"
+  },
+  "homepage": "https://github.com/uyko76/react-portfolio-papa#readme"
 }
