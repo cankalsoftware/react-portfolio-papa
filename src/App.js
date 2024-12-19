@@ -15,9 +15,18 @@ const App = () => {
 
   useEffect(() => {
     fetch("/resumeData.json")
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return res.json();
+      })
       .then((data) => {
+        console.log("Fetched data:", data); // Add this line
         setResumeData(data);
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
       });
   }, []);
 

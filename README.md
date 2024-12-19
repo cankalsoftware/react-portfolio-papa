@@ -9,6 +9,11 @@ render it with RENDER, no free Heroku
 Delete the node_modules folder and package-lock.json file
 and reinstall them with
 $npm install
+$ npm audit fix
+
+
+then go to step 7
+
 
 ## Resume Starter Pack Description
 
@@ -39,7 +44,26 @@ If you want to display your own pictures then you have to replace the files at t
 ## 7. Finalising Resume
 
 Once all the formatting and data input is finalised, run the command `npm start` and you'll see your resume on local host.
-Run the command `npm run init` to set up a new or existing npm package. Then run `npm install` and then finally run `npm run build`. This will create a dedicated build folder.
+if you get error, you need to update the package.json file with 
+
+"start": "react-scripts --openssl-legacy-provider start",
+
+
+
+Then finally run `npm run build`. This will create a dedicated build folder.
+
+To deploy on firebase
+
+$ npm install -g firebase-tools
+
+$ firebase login > will take you to log into yoru firebase account
+
+$ firebase init
+
+select hosting option and follow the screen options to login to firebase with pre created or new created location 
+
+$ firebase deploy
+
 
 ## 8. Host Resume Online
 
