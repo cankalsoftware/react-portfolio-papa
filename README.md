@@ -61,6 +61,8 @@ $ firebase login > will take you to log into yoru firebase account
 $ firebase init
 
 select hosting option and follow the screen options to login to firebase with pre created or new created location 
+in the hosting setting set the answers y-y-n
+Do not connect the github update
 
 $ firebase deploy
 
@@ -84,7 +86,7 @@ $ firebase deploy
 
 npm run build
 
-then move teh build folder to hosting site
+then move the build folder to hosting site
 
 update the .htaccess file with
 <IfModule mod_rewrite.c>
