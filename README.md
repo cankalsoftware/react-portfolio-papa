@@ -5,6 +5,11 @@
 ### <a href="https://resume-portfolio-starter-pack.herokuapp.com">LIVE DEMO</a>
 Updated on 19-12-24
 
+render it with RENDER, no free Heroku
+Delete the node_modules folder and package-lock.json file
+and reinstall them with
+$npm install
+
 ## Resume Starter Pack Description
 
 This portfolio starter pack is made using React. The data on the portfolio is directly linked to a JSON file. Any changes to the portfolio can be made in the JSON file. The changes will then be reflected on to the portfolio. This allows you to customize your own personal portfolio that can be used for applying to jobs or other personal uses. If you need to use this portfolio for your own personal website then follow the steps below:
@@ -39,10 +44,10 @@ Run the command `npm run init` to set up a new or existing npm package. Then run
 ## 8. Host Resume Online
 
 1) Upload all the Resume related files to your Github Profile
-2) Go to <a href="https://www.heroku.com">Heroku</a> and set up your profile
-3) Create a New App
-4) Choose Github as a Deployment Method
-5) Select the correct resume repository that you uploaded in Step 1
+2) Go to <a href="https://render.com">Render</a> and set up your profile
+3) Create a New Web Service
+4) Connect your GitHub repository
+5) Select the correct resume repository that you uploaded in Step 1 and deploy
 
 ## Credits
 
