@@ -78,3 +78,20 @@ $ firebase deploy
 ##### Original Idea
 
 <a href="https://github.com/tbakerx/react-resume-template/blob/master/README.md">Inspiration from Tim Baker (tbakerx)</a>
+
+
+## Manual deploy
+
+npm run build
+
+then move teh build folder to hosting site
+
+update the .htaccess file with
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
